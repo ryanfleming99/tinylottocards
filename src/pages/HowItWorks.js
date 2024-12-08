@@ -45,7 +45,7 @@ function HowItWorks() {
           <p className="text-md md:text-lg mt-6 md:mt-8 max-w-lg md:max-w-3xl mx-auto font-pusab text-white">
             Discover the revolutionary TinyLotto ecosystem! Learn how to buy,
             trade, and win with our unique NFT-powered cryptocurrency scratch
-            cards.
+            cards....
           </p>
         </section>
 
