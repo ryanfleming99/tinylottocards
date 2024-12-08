@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import "../styles/main.css";
-import signUpForm from "../components/signUpForm";
 
 function HomePage() {
   const [isMonochrome, setIsMonochrome] = useState(true);
