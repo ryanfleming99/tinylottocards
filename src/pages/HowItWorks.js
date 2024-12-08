@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import "../styles/main.css";
+import { MoonPayBuyWidget } from "@moonpay/moonpay-react";
 
 function HowItWorks() {
+  const [visible, setVisible] = useState(false);
   return (
     <div className="theme-monochrome">
+      <MoonPayBuyWidget
+        variant="embedded"
+        baseCurrencyCode="usd"
+        baseCurrencyAmount="100"
+        defaultCurrencyCode="eth"
+        visible={visible}
+      />
+      <button onClick={() => setVisible(!visible)}>Toggle widget</button>
       {/* Main Background */}
       <main
         className="mainbg bg-cover bg-no-repeat bg-center"
