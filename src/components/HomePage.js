@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "./Header";
-import Footer from "./Footer";
 import "../styles/main.css"; // Adjust path to reflect new location
 // Assuming you will use a separate CSS file for simplicity
 
@@ -11,9 +10,9 @@ function HomePage() {
     alert("Connect Wallet functionality coming soon!");
   };
 
-  const zoom = cardName => {
+  /* const zoom = cardName => {
     alert(`Zooming in on ${cardName}`);
-  };
+  }; */
 
   const btnClick = () => {
     alert("Navigating...");
