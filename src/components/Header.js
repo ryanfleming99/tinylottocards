@@ -27,7 +27,7 @@ const Header = ({ connectWallet, toggleTheme }) => {
           <Link to="/staking" className="nav-link">
             Staking (coming soon)
           </Link>
-          <Link to="/howitworks" className="nav-link">
+          <Link to="/how-it-works" className="nav-link">
             How It Works
           </Link>
         </nav>
