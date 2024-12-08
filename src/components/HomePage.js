@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import "./styles/main.css"; // Adjust path to reflect new location
+import "../styles/main.css"; // Adjust path to reflect new location
 // Assuming you will use a separate CSS file for simplicity
 
 function HomePage() {

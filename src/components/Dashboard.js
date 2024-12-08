@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/main.css"; // Adjust path to reflect new location
+import "../styles/main.css"; // Adjust path to reflect new location
 // Import custom styles if needed
 import Header from "./Header";
 
