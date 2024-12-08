@@ -38,23 +38,26 @@
   --h1-color: #ffffff;
   --bg-color: #f5f5f5;
   --text-color: #000000;
-  --accent-color: #999999;
-
-  --button-bg: #ffffff;
+  --accent-color: hsl(0, 0%, 60%);
+  --button-bg: #2a606763;
   --button-text: #2a6067;
   --button-bg-hover: rgba(32, 140, 228, 0.842);
   --navigation-color: #ffffff;
   --footer-color: #ffffff;
+  --nav-link-hover: #ffffff8a;
 }
 
 .theme-colorful {
-  --h1-color: #ffffff;
+  --h1-color: #d64f4f;
   --bg-color: #a47864;
   --text-color: #ffffff;
   --accent-color: #ba2649;
-
+  --nav-link-hover: #ffffff8a;
+  --link-color-hover: #000;
   --button-bg: #6667ab;
   --button-text: #ffffff;
+  --background-move: 10%;
+  --navigation-color: #d64f4f;
 }
 
 /* Base Styling */
@@ -67,9 +70,46 @@ body {
   font-style: normal;
 }
 
+.theme-colourful main {
+  background-position-x: var(--background-move);
+}
+
 .header-container,
 .footer-container {
   background-color: transparent;
+}
+.bg-pos-x-0 {
+  transition: background-position 3s ease;
+}
+
+.bg-pos-x-10 {
+  background-image: url("https://res.cloudinary.com/ryry/image/upload/v1733681828/ry_boi_add_small_white_dog_7da68f71-4c19-44d0-92cc-b3eeb15b325d_maseqj.webp") !important;
+  transition: background-image 3s ease-out;
+  background-size: cover;
+}
+
+.hiddenIntro {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 3s cubic-bezier(0.25, 0.1, 0.36, 1.1);
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 5s ease-in;
+}
+
+.banner {
+  opacity: 1;
+  transition: opacity 2s ease;
+  pointer-events: auto;
+}
+
+.unstyle-banner {
+  opacity: 0;
+  transition: opacity 2s ease;
+  pointer-events: none;
 }
 
 /* Buttons */
@@ -84,7 +124,7 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   padding: 12px 24px; /* Slightly larger padding for prominence */
   font-weight: bold;
-  font-size: 16px; /* Larger, readable text */
+  font-size: 14px; /* Larger, readable text */
   text-transform: uppercase; /* Makes it stand out */
   letter-spacing: 1px; /* Adds spacing for a clean appearance */
   cursor: pointer; /* Pointer cursor for clear interactivity */
@@ -127,7 +167,7 @@ h3 {
 
 /* Intro Text */
 .intro {
-  font-size: 20px;
+  font-size: 24px;
   color: var(--navigation-color);
   text-shadow: var(--text-shadow-light);
 }
@@ -152,9 +192,12 @@ a {
 }
 
 .nav-link:hover,
-.footer-link:hover,
 .social-link:hover {
-  color: var(--footer-color);
+  color: var(--nav-link-hover);
+}
+
+.footer-link:hover {
+  color: var(--nav-link-hover);
 }
 
 /* Cards */

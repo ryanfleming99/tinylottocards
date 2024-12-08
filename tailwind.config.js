@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundPosition: {
+        "x-0": "0% center"
+      },
       animation: {
         "fade-in": "fade-in 1.5s ease-in forwards"
       },
