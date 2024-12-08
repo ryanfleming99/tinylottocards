@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import "/Users/user1/Desktop/portfolio/tiny-lotto-react/src/main.css"; // Assuming you will use a separate CSS file for simplicity
+import "./styles/main.css"; // Adjust path to reflect new location
+// Assuming you will use a separate CSS file for simplicity
 
 function HomePage() {
   const [isMonochrome, setIsMonochrome] = useState(true);

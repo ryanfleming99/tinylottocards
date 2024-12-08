@@ -1,5 +1,6 @@
 import React from "react";
-import "../../src/main.css"; // Import custom styles if needed
+import "./styles/main.css"; // Adjust path to reflect new location
+// Import custom styles if needed
 import Header from "./Header";
 
 function Dashboard() {
