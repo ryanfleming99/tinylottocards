@@ -30,6 +30,9 @@ const Header = ({ connectWallet, toggleTheme }) => {
           <Link to="/how-it-works" className="nav-link">
             How It Works
           </Link>
+          <Link to="/get-crypto-with-moonpay" className="nav-link">
+            Get Crypto!
+          </Link>
         </nav>
 
         {/* Mobile Hamburger Menu */}
@@ -66,6 +69,13 @@ const Header = ({ connectWallet, toggleTheme }) => {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             How It Works
+          </Link>
+          <Link
+            to="/get-crypto-with-moonpay"
+            className="nav-link block"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Buy Crypto
           </Link>
         </nav>
 

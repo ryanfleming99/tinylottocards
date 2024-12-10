@@ -3,7 +3,7 @@ import gsap from "gsap";
 import "../styles/main.css"; // Assuming your CSS file is here
 import Header from "../components/Header";
 
-function Staking() {
+function PaymentPage() {
   useEffect(() => {
     // GSAP animation to make the second background (overlay) float
     gsap.to(".overlay-background", {
@@ -66,4 +66,4 @@ function Staking() {
   );
 }
 
-export default Staking;
+export default PaymentPage;

@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Dashboard from "./pages/Dashboard";
 import HowItWorks from "./pages/HowItWorks";
 import Staking from "./pages/Staking";
+import GetCryptoPage from "./pages/GetCryptoPage";
 import { MoonPayProvider } from "@moonpay/moonpay-react";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/staking" element={<Staking />} />
+          <Route path="/get-crypto-with-moonpay" element={<GetCryptoPage />} />
         </Routes>
       </Router>
     </MoonPayProvider>

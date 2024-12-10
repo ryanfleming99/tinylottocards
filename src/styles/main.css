@@ -229,3 +229,19 @@ a {
   transform: scale(1.05);
   box-shadow: var(--box-shadow-medium);
 }
+
+div#moonpay-react-sdk-embedded-frame {
+  position: relative;
+  border: none !important;
+  border-radius: 0px !important;
+  min-width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(98 48 186 / 29%),
+    rgb(125 1 255 / 68%)
+  );
+  border-radius: 30px !important;
+  margin-top: 50px;
+  height: 100vh;
+}
