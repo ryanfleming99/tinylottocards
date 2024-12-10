@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import "../styles/main.css";
+import { gsap } from "gsap";
 
 function HomePage() {
   const [isMonochrome, setIsMonochrome] = useState(true);
   const [isBannerHidden, setIsBannerHidden] = useState(false);
   const [isMainMoved, setIsMainMoved] = useState(false);
   const [hiddenIntro, setHiddenIntro] = useState(false);
+  useEffect(() => {
+    gsap.to("#heroBanner", { duration: 2, x: 0, y: 100 });
+    gsap.to("#background", { duration: 2, filter: "saturate(120%)" });
+  }, []);
 
   const toggleTheme = () => {
     const newTheme = !isMonochrome;
@@ -23,6 +28,7 @@ function HomePage() {
   return (
     <div className={isMonochrome ? "theme-monochrome" : "theme-colorful"}>
       <main
+        id="background"
         className={`mainbg bg-cover bg-no-repeat bg-center ${
           isMainMoved ? "bg-pos-x-10" : "bg-pos-x-0"
         }`}
@@ -32,7 +38,8 @@ function HomePage() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           height: "100vh",
-          width: "100%"
+          width: "100%",
+          filter: "saturate(0%)"
         }}
       >
         <Header
@@ -43,6 +50,7 @@ function HomePage() {
         />
         <section className="relative text-center w-full h-auto">
           <div
+            id="heroBanner"
             className={`mx-auto relative top-20 md:top-28 left-1/2 transform -translate-x-1/2 ${
               isBannerHidden ? "unstyle-banner" : "banner"
             }`}

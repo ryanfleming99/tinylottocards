@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Dashboard from "./pages/Dashboard";
 import HowItWorks from "./pages/HowItWorks";
+import Staking from "./pages/Staking";
 import { MoonPayProvider } from "@moonpay/moonpay-react";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/staking" element={<Staking />} />
         </Routes>
       </Router>
     </MoonPayProvider>

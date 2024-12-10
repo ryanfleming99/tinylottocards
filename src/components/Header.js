@@ -70,7 +70,7 @@ const Header = ({ connectWallet, toggleTheme }) => {
         </nav>
 
         {/* Connect Wallet Button */}
-        <div className="hidden md:flex space-x-4">
+        <div id="walletButton" className="hidden md:flex space-x-4">
           <button onClick={connectWallet} className="connect-wallet-button">
             Connect Wallet
           </button>

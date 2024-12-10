@@ -136,7 +136,7 @@ function HowItWorks() {
           </p>
           <button
             className="bg-bright-yellow text-charcoal px-6 py-3 rounded-lg shadow-md font-bold hover:bg-rich-blue hover:text-white transform transition"
-            onClick={() => alert("Navigate to Signup")}
+            onClick={() => alert("Coming soon!")}
           >
             Join Now
           </button>
