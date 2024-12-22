@@ -9,7 +9,7 @@ function Dashboard() {
   };
 
   const zoom = cardName => {
-    alert(`Zooming in on ${cardName}`);
+    alert(`zoom coming soon for ${cardName}`);
   };
 
   return (
