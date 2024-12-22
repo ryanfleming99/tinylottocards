@@ -1,7 +1,6 @@
 import React from "react";
-import "../styles/main.css"; // Adjust path to reflect new location
-// Import custom styles if needed
 import Header from "../components/Header";
+/* import Link from "next/link"; // Correct Next.js import */
 
 function Dashboard() {
   const buyCard = cardName => {
@@ -24,12 +23,12 @@ function Dashboard() {
       }}
     >
       {/* Header */}
-      <Header />
+      <Header isBackButton={true} />
 
       {/* Hero Section */}
       <main className="flex flex-col items-center text-center">
         {/* Hero Section */}
-        <section className="flex flex-col justify-center items-center py-44">
+        <section className="flex flex-col justify-center items-center py-44 z-[50] sm:z-99">
           <h2 className="text-5xl font-bold drop-shadow-md">Dashboard</h2>
           <p className="text-lg mt-6 max-w-2xl mx-auto intro px-6">
             Explore our unique collection of NFT scratch cards. Buy using

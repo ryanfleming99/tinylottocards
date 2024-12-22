@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: "Pusab";
-  src: url("/public/PUSAB___.otf") format("truetype"); /* Update path as necessary */
+  src: url("/PUSAB___.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -77,6 +77,8 @@ body {
 .header-container,
 .footer-container {
   background-color: transparent;
+  z-index: 9999 !important;
+    position: relative;
 }
 .bg-pos-x-0 {
   transition: background-position 3s ease;
@@ -183,8 +185,7 @@ a {
 /* Navigation and Social Links */
 .nav-link,
 .social-link {
-  color: var(--navigation-color);
-  font-size: 24px;
+  font-size: 20px;
   padding: 10px 20px;
   text-shadow: var(--text-shadow-light);
   font-family: "Pusab", sans-serif;
