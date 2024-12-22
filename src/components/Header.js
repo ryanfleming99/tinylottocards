@@ -60,14 +60,14 @@ const Header = ({ connectWallet, toggleTheme, isBackButton }) => {
             } md:hidden`}
           >
             <Link
-              href="/dashboard"
+              href="/Dashboard"
               className="nav-link block sm:text-white text-white font-pusab"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Dashboard
             </Link>
             <Link
-              href="/staking"
+              href="/Staking"
               className="nav-link block sm:text-white text-white font-pusab"
               onClick={() => setIsMobileMenuOpen(false)}
             >

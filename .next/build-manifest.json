@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/qXASfTfKBqSdBJyi-2KQ9/_buildManifest.js",
-    "static/qXASfTfKBqSdBJyi-2KQ9/_ssgManifest.js"
+    "static/zOd7s8ePaN57nEnN70ZVk/_buildManifest.js",
+    "static/zOd7s8ePaN57nEnN70ZVk/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -18,7 +18,7 @@
       "static/chunks/94726e6d-06f83568c00606f6.js",
       "static/chunks/106-a71b11894cb18610.js",
       "static/chunks/517-c0dd63c732262d30.js",
-      "static/chunks/pages/index-42d08babaa431aa6.js"
+      "static/chunks/pages/index-44d2d57c6ab269ad.js"
     ],
     "/_app": [
       "static/chunks/webpack-ef6372490294cde1.js",
@@ -38,7 +38,7 @@
       "static/chunks/framework-a4ddb9b21624b39b.js",
       "static/chunks/main-8448dad111809d8c.js",
       "static/chunks/106-a71b11894cb18610.js",
-      "static/chunks/pages/dashboard-ecd10e3d356cfc43.js"
+      "static/chunks/pages/dashboard-c4e2c6518ede1056.js"
     ],
     "/get-crypto": [
       "static/chunks/webpack-ef6372490294cde1.js",
@@ -47,7 +47,7 @@
       "static/chunks/94726e6d-06f83568c00606f6.js",
       "static/chunks/106-a71b11894cb18610.js",
       "static/chunks/517-c0dd63c732262d30.js",
-      "static/chunks/pages/get-crypto-e7dd20b5f20b7c92.js"
+      "static/chunks/pages/get-crypto-6ef7da2c60126998.js"
     ],
     "/homepage": [
       "static/chunks/webpack-ef6372490294cde1.js",
@@ -56,14 +56,14 @@
       "static/chunks/94726e6d-06f83568c00606f6.js",
       "static/chunks/106-a71b11894cb18610.js",
       "static/chunks/517-c0dd63c732262d30.js",
-      "static/chunks/pages/homepage-e29018c66cfde475.js"
+      "static/chunks/pages/homepage-86f1be614c66a0d3.js"
     ],
     "/how-it-works": [
       "static/chunks/webpack-ef6372490294cde1.js",
       "static/chunks/framework-a4ddb9b21624b39b.js",
       "static/chunks/main-8448dad111809d8c.js",
       "static/chunks/106-a71b11894cb18610.js",
-      "static/chunks/pages/how-it-works-d19c09d8a530d51c.js"
+      "static/chunks/pages/how-it-works-01a31728a4593eb3.js"
     ],
     "/staking": [
       "static/chunks/webpack-ef6372490294cde1.js",
@@ -72,7 +72,7 @@
       "static/chunks/94726e6d-06f83568c00606f6.js",
       "static/chunks/106-a71b11894cb18610.js",
       "static/chunks/517-c0dd63c732262d30.js",
-      "static/chunks/pages/staking-debbb2e1418d1680.js"
+      "static/chunks/pages/staking-bf5466ab76e5a201.js"
     ]
   },
   "ampFirstPages": []
