@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import Header from "../components/Header";
 
-function staking() {
+function Staking() {
   useEffect(() => {
     // GSAP animation to make the second background (overlay) float
     gsap.to(".overlay-background", {
@@ -65,4 +65,4 @@ function staking() {
   );
 }
 
-export default staking;
+export default Staking;
