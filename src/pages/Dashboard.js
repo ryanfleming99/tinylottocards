@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Title from "../components/Title";
 /* import Link from "next/link"; // Correct Next.js import */
 
-function Dashboard() {
+function dashboard() {
   const buyCard = cardName => {
     alert(`Buying ${cardName} with cryptocurrency.`);
   };
@@ -98,4 +98,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default dashboard;
