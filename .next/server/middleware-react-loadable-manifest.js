@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"pages/get-crypto.js -> ../components/Moonpay.js\":{\"id\":\"pages/get-crypto.js -> ../components/Moonpay.js\",\"files\":[\"static/chunks/src_components_Moonpay_js.js\"]}}"
