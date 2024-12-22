@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import "../styles/main.css"; // Assuming your CSS file is here
 import Header from "../components/Header";
 
-function PaymentPage() {
+function Staking() {
   useEffect(() => {
     // GSAP animation to make the second background (overlay) float
     gsap.to(".overlay-background", {
@@ -47,7 +46,7 @@ function PaymentPage() {
       ></div>
 
       {/* Hero Section */}
-      <main className="flex flex-col justify-center items-center h-2/3 text-center opacity-0 animate-fade-in">
+      <main className="flex flex-col justify-center items-center h-2/3 text-center opacity-0 animate-fade-in z-50 sm:z-[-1]">
         <div className="h-100 py-50 z-50">
           <h1 className="text-7xl font-bold drop-shadow-md">Staking!</h1>
           <p className="text-lg mt-6 max-w-2xl mx-auto intro">
@@ -66,4 +65,4 @@ function PaymentPage() {
   );
 }
 
-export default PaymentPage;
+export default Staking;

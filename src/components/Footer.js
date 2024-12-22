@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -6,46 +7,46 @@ const Footer = () => {
       <div className="container mx-auto px-6 text-center">
         {/* Links */}
         <div className="flex justify-center space-x-6 mt-6">
-          <a href="#terms" className="footer-link">
+          <Link href="/terms" className="footer-link">
             Terms & Conditions
-          </a>
-          <a href="#privacy" className="footer-link">
+          </Link>
+          <Link href="/privacy" className="footer-link">
             Privacy Policy
-          </a>
-          <a href="#support" className="footer-link">
+          </Link>
+          <Link href="/support" className="footer-link">
             Support
-          </a>
-          <a href="#faq" className="footer-link">
+          </Link>
+          <Link href="/faq" className="footer-link">
             FAQ
-          </a>
+          </Link>
         </div>
 
         {/* Social Icons */}
         <div className="">
-          <a
+          <Link
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
           >
             <i className="fab fa-twitter text-2xl"></i>
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://discord.com"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
           >
             <i className="fab fa-discord text-2xl"></i>
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
           >
             <i className="fab fa-github text-2xl"></i>
-          </a>
+          </Link>
         </div>
 
         {/* Copyright */}

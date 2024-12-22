@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
-import "../styles/main.css";
 import { gsap } from "gsap";
+import Link from "next/link"; // Correct Next.js import
 
 function HomePage() {
   const [isMonochrome, setIsMonochrome] = useState(true);
@@ -48,7 +48,7 @@ function HomePage() {
           }
           toggleTheme={toggleTheme}
         />
-        <section className="relative text-center w-full h-auto">
+        <section className="relative text-center w-full h-auto z-50 sm:z-[-1]">
           <div
             id="heroBanner"
             className={`mx-auto relative top-20 md:top-28 left-1/2 transform -translate-x-1/2 ${
@@ -92,18 +92,18 @@ function HomePage() {
             © {new Date().getFullYear()} TinyLotto. All rights reserved.
           </p>
           <div className="flex justify-center space-x-4 md:space-x-6 mt-4 md:mt-6">
-            <a href="#terms" className="footer-link text-xs md:text-sm">
+            <Link href="/terms" className="footer-link text-xs md:text-sm">
               Terms & Conditions
-            </a>
-            <a href="#privacy" className="footer-link text-xs md:text-sm">
+            </Link>
+            <Link href="/privacy" className="footer-link text-xs md:text-sm">
               Privacy Policy
-            </a>
-            <a href="#support" className="footer-link text-xs md:text-sm">
+            </Link>
+            <Link href="/support" className="footer-link text-xs md:text-sm">
               Support
-            </a>
-            <a href="#faq" className="footer-link text-xs md:text-sm">
+            </Link>
+            <Link href="/faq" className="footer-link text-xs md:text-sm">
               FAQ
-            </a>
+            </Link>
           </div>
         </div>
       </footer>
