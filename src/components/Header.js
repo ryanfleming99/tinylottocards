@@ -27,10 +27,10 @@ const Header = ({ connectWallet, toggleTheme, isBackButton }) => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6 px-24">
-          <Link href="/dashboard" className="nav-link font-nunito ">
+          <Link href="/Dashboard" className="nav-link font-nunito ">
             Dashboard
           </Link>
-          <Link href="/staking" className="nav-link font-nunito ">
+          <Link href="/Staking" className="nav-link font-nunito ">
             Staking (coming soon)
           </Link>
           <Link href="/how-it-works" className="nav-link font-nunito ">
