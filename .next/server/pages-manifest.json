@@ -1,10 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/dashboard": "pages/dashboard.js",
-  "/": "pages/index.js",
-  "/staking": "pages/staking.js",
-  "/how-it-works": "pages/how-it-works.js",
-  "/get-crypto": "pages/get-crypto.js"
-}
+{"/dashboard":"pages/dashboard.html","/get-crypto":"pages/get-crypto.html","/_app":"pages/_app.js","/homepage":"pages/homepage.html","/how-it-works":"pages/how-it-works.html","/staking":"pages/staking.html","/":"pages/index.html","/_error":"pages/_error.js","/_document":"pages/_document.js","/404":"pages/404.html"}
