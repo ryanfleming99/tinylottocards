@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Title from "../components/Title";
 /* import Link from "next/link"; // Correct Next.js import */
 
 function Dashboard() {
@@ -29,7 +30,7 @@ function Dashboard() {
       <main className="flex flex-col items-center text-center">
         {/* Hero Section */}
         <section className="flex flex-col justify-center items-center py-44 z-[50] sm:z-99">
-          <h2 className="text-5xl font-bold drop-shadow-md">Dashboard</h2>
+          <Title text={"Dashboard"} />
           <p className="text-lg mt-6 max-w-2xl mx-auto intro px-6">
             Explore our unique collection of NFT scratch cards. Buy using
             cryptocurrency and start collecting today!

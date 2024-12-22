@@ -10,7 +10,7 @@ const Header = ({ connectWallet, toggleTheme, isBackButton }) => {
 
   return (
     <header className="header-container bg-white shadow-md z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-10 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-10 py-4 flex items-center justify-center">
         {/* Logo */}
         <button
           onClick={
@@ -26,17 +26,17 @@ const Header = ({ connectWallet, toggleTheme, isBackButton }) => {
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-6">
-          <Link href="/dashboard" className="nav-link font-nunito">
+        <nav className="hidden md:flex space-x-6 px-24">
+          <Link href="/dashboard" className="nav-link font-nunito ">
             Dashboard
           </Link>
-          <Link href="/staking" className="nav-link font-nunito">
+          <Link href="/staking" className="nav-link font-nunito ">
             Staking (coming soon)
           </Link>
-          <Link href="/how-it-works" className="nav-link font-nunito">
+          <Link href="/how-it-works" className="nav-link font-nunito ">
             How It Works
           </Link>
-          <Link href="/get-crypto" className="nav-link font-nunito">
+          <Link href="/get-crypto" className="nav-link font-nunito ">
             Get Crypto!
           </Link>
         </nav>
