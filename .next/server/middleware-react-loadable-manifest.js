@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"pages/get-crypto.js -> ../components/Moonpay.js":{"id":2213,"files":["static/chunks/213.c0524a77e6927681.js"]}}';
