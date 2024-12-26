@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Ethers from "./Ethers";
 
 const Header = ({ connectWallet, toggleTheme, isBackButton }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -92,9 +93,7 @@ const Header = ({ connectWallet, toggleTheme, isBackButton }) => {
 
         {/* Connect Wallet Button */}
         <div id="walletButton" className="hidden md:flex space-x-4">
-          <button onClick={connectWallet} className="connect-wallet-button">
-            Connect Wallet
-          </button>
+          <Ethers />
         </div>
       </div>
     </header>
