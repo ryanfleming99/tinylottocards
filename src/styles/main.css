@@ -122,16 +122,33 @@ body {
   background: linear-gradient(90deg, #51b3cb99, #51b3cb99);
   color: #ffffff;
   border: none;
-  border-radius: 12px; /* Slightly rounded for a modern look */
+  border-radius: 12px; 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-  padding: 12px 24px; /* Slightly larger padding for prominence */
+  padding: 12px 24px; 
   font-weight: bold;
-  font-size: 14px; /* Larger, readable text */
-  text-transform: uppercase; /* Makes it stand out */
-  letter-spacing: 1px; /* Adds spacing for a clean appearance */
-  cursor: pointer; /* Pointer cursor for clear interactivity */
+  font-size: 14px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  cursor: pointer; 
   transition: all 0.3s ease;
-  outline: none; /* Removes focus outline for a cleaner look */
+  outline: none; 
+}
+
+.wallet-connected {
+   background: linear-gradient(90deg, #4091b1, #4091b1);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 12px 24px; 
+  font-weight: bold;
+  font-size: 14px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  cursor: pointer; 
+  transition: all 0.3s ease;
+  outline: none; 
+  border: 1px solid white;
 }
 
 .primary-button:hover,
@@ -155,7 +172,7 @@ body {
 .secondary-button:focus,
 .connect-wallet-button:focus,
 .theme-switcher-button:focus {
-  outline: 2px solid rgba(255, 138, 0, 0.5); /* Focus ring for accessibility */
+  outline: 2px solid rgba(255, 138, 0, 0.5); 
 }
 
 /* Headings */
