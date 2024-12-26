@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ethers } from "ethers";
 
 function WalletConnect() {
   const [walletAddress, setWalletAddress] = useState(null);
