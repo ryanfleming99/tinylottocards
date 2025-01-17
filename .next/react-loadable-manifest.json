@@ -1,8 +1,8 @@
 {
   "pages/get-crypto.js -> ../components/Moonpay.js": {
-    "id": "pages/get-crypto.js -> ../components/Moonpay.js",
+    "id": 2213,
     "files": [
-      "static/chunks/src_components_Moonpay_js.js"
+      "static/chunks/213.424e52a65756e87a.js"
     ]
   }
 }
