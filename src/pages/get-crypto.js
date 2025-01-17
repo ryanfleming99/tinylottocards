@@ -3,8 +3,9 @@ import gsap from "gsap";
 import Header from "../components/Header";
 import dynamic from "next/dynamic";
 
+// Dynamically import the MoonPay component
 const MoonPay = dynamic(() => import("../components/Moonpay.js"), {
-  ssr: false
+  ssr: false // Disable server-side rendering
 });
 
 function GetCrypto() {
@@ -32,7 +33,7 @@ function GetCrypto() {
           <h1 id="floatingIntro" className="text-4xl font-extrabold">
             Your Gateway to Cryptocurrency!
           </h1>
-          <MoonPayBuyWidget
+          <MoonPay
             apiKey={process.env.NEXT_PUBLIC_MOONPAY_PUBLIC_KEY}
             variant="embedded"
             baseCurrencyCode="usd"
