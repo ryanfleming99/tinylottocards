@@ -1,22 +1,15 @@
 import dynamic from "next/dynamic";
 
-const MoonPayBuyWidget = dynamic(
-  () => import("@moonpay/moonpay-react").then(mod => mod.MoonPayBuyWidget),
-  { ssr: false } // Disable server-side rendering
+// Dynamically import MoonPayProvider with SSR disabled
+const MoonPayProvider = dynamic(
+  () => import("@moonpay/moonpay-react").then(mod => mod.MoonPayProvider),
+  { ssr: false }
 );
 
-export default function MoonPay(props) {
-  const publicKey = process.env.NEXT_PUBLIC_MOONPAY_PUBLIC_KEY;
-
+export default function App({ Component, pageProps }) {
   return (
-    <MoonPayBuyWidget
-      className={props.className}
-      variant={props.variant}
-      baseCurrencyCode={props.baseCurrencyCode}
-      baseCurrencyAmount={props.baseCurrencyAmount}
-      defaultCurrencyCode={props.defaultCurrencyCode}
-      visible={props.visible}
-      apiKey={publicKey}
-    />
+    <MoonPayProvider apiKey={process.env.NEXT_PUBLIC_MOONPAY_PUBLIC_KEY}>
+      <Component {...pageProps} />
+    </MoonPayProvider>
   );
 }
