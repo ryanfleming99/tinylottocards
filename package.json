@@ -6,11 +6,13 @@
     "@moonpay/moonpay-js": "^0.6.2",
     "@moonpay/moonpay-react": "^1.8.3",
     "@testing-library/jest-dom": "^5.17.0",
+    "core-js": "^3.40.0",
     "ethers": "^6.13.4",
     "gsap": "^3.12.5",
     "homepage": ".",
     "next": "^15.1.2",
     "react": "^19.0.0",
+    "react-scratchcard": "^1.1.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

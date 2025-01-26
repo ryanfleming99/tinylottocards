@@ -40,6 +40,9 @@ const Header = ({ connectWallet, toggleTheme, isBackButton }) => {
           <Link href="/get-crypto" className="nav-link font-nunito ">
             Get Crypto!
           </Link>
+          <Link href="/open-pack" className="nav-link font-nunito ">
+            Open Packs!
+          </Link>
         </nav>
 
         {/* Mobile Hamburger Menu */}
