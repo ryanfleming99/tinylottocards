@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/open-pack": "pages/open-pack.js",
-  "/Dashboard": "pages/Dashboard.js"
+  "/collect-prize": "pages/collect-prize.js",
+  "/open-pack": "pages/open-pack.js"
 }

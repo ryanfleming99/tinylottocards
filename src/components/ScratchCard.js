@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { gsap } from "gsap";
 
 const ScratchCard = ({
   width,
@@ -22,14 +23,13 @@ const ScratchCard = ({
 
     // Load and draw the overlay image
     const overlayImage = new Image();
-    overlayImage.crossOrigin = "anonymous"; // Enable CORS
+    overlayImage.crossOrigin = "anonymous"; // Allow cross-origin access
     overlayImage.src = image;
     overlayImage.onload = () => {
       ctx.drawImage(overlayImage, 0, 0, width, height);
     };
 
-    // Scratch logic
-    const scratch = ({ x, y }) => {
+    const scratch = (x, y) => {
       ctx.globalCompositeOperation = "destination-out";
       ctx.beginPath();
       ctx.arc(x, y, 20, 0, Math.PI * 2, false);
@@ -37,19 +37,25 @@ const ScratchCard = ({
     };
 
     const checkCompletion = () => {
-      const imageData = ctx.getImageData(0, 0, width, height);
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
       const totalPixels = imageData.data.length / 4;
-      let transparentPixels = 0;
+      let clearedPixels = 0;
 
-      for (let i = 3; i < imageData.data.length; i += 40) {
-        if (imageData.data[i] === 0) transparentPixels++;
+      // Count transparent pixels
+      for (let i = 3; i < imageData.data.length; i += 4) {
+        if (imageData.data[i] === 0) {
+          clearedPixels++;
+        }
       }
 
-      const transparencyRatio = transparentPixels / (totalPixels / 10);
+      const clearedPercentage = (clearedPixels / totalPixels) * 100;
 
-      if (transparencyRatio > 0.5 && !isScratched) {
+      // Trigger onComplete when more than 70% of the card is cleared
+      if (clearedPercentage > 70 && !isScratched) {
         setIsScratched(true);
-        if (onComplete) onComplete();
+        if (onComplete) {
+          onComplete();
+        }
       }
     };
 
@@ -58,7 +64,7 @@ const ScratchCard = ({
       const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
       const y = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top;
 
-      scratch({ x, y });
+      scratch(x, y);
       checkCompletion();
     };
 
@@ -77,7 +83,8 @@ const ScratchCard = ({
       style={{
         position: "relative",
         width: `${width}px`,
-        height: `${height}px`
+        height: `${height}px`,
+        perspective: "1000px"
       }}
     >
       {/* Prize Image (Background) */}
@@ -91,7 +98,7 @@ const ScratchCard = ({
           width: "100%",
           height: "100%",
           zIndex: 1,
-          pointerEvents: "none" // Ensure the canvas gets the mouse events
+          pointerEvents: "none" // Ensure canvas gets the mouse events
         }}
       />
 

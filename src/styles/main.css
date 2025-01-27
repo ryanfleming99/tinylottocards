@@ -118,7 +118,8 @@ body {
 .primary-button,
 .secondary-button,
 .connect-wallet-button,
-.theme-switcher-button {
+.theme-switcher-button,
+.gold-button {
   background: linear-gradient(90deg, #51b3cb99, #51b3cb99);
   color: #ffffff;
   border: none;
@@ -132,6 +133,71 @@ body {
   cursor: pointer; 
   transition: all 0.3s ease;
   outline: none; 
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+  50% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: -200%;
+  }
+}
+
+.animated-button {
+  animation: pulse 1.5s infinite ease-in-out, shine 2s infinite linear;
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, #ffffff, #f1c40f, #ffffff);
+  background-size: 300%;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.sparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: gold;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgba(255, 223, 0, 0.8);
+  pointer-events: none;
+}
+
+
+.animated-button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.8);
+  background-size: 200%;
+}
+
+
+
+.gold-button {
+background: linear-gradient(90deg, #f1c40f, #f1c40f);
+color:white;
+font-size:0.8em;
+
 }
 
 .wallet-connected {

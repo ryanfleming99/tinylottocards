@@ -31,17 +31,14 @@ const Header = ({ connectWallet, toggleTheme, isBackButton }) => {
           <Link href="/Dashboard" className="nav-link font-nunito ">
             Dashboard
           </Link>
-          <Link href="/Staking" className="nav-link font-nunito ">
-            Staking (coming soon)
-          </Link>
           <Link href="/how-it-works" className="nav-link font-nunito ">
             How It Works
           </Link>
           <Link href="/get-crypto" className="nav-link font-nunito ">
-            Get Crypto!
+            Get Crypto
           </Link>
           <Link href="/open-pack" className="nav-link font-nunito ">
-            Open Packs!
+            Open Packs (demo)
           </Link>
         </nav>
 
@@ -90,6 +87,9 @@ const Header = ({ connectWallet, toggleTheme, isBackButton }) => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Buy Crypto
+            </Link>
+            <Link href="/open-pack" className="nav-link font-nunito ">
+              Open Packs (demo)
             </Link>
           </nav>
         </div>
